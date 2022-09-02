@@ -20,6 +20,10 @@
             justify-content: center;
             align-items: center;
         }
+        a{
+            text-decoration: none;
+            color: #005185;
+        }
         .card{
             position: relative; /*Para poder ubicar el footer al final*/
             width: 300px;
@@ -63,21 +67,32 @@
             width: 100%;
             display: flex;
             justify-content: space-evenly;
+            margin-top: 12px;
         }
         .C02{
             font-size: 14px;
+            display: flex;
+        }
+        .icon_01{
+            width: 16px;
+            margin-right: 8px;
+            object-fit: contain;
+        }
+        .icon_02{
+            width: 24px;
+            object-fit: contain;
         }
         .footer{
-            width: 100%;
+            width: 60%;
             position: absolute;
             bottom: 0px;
             height: 2.5rem;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
         .footer a{
-            padding-right: 20px;
-            padding-left: 20px;
+            display: flex;
+            align-items: center;
         }
     </style>
 </head>
@@ -89,22 +104,33 @@
             </div>
             <img class="perfil" src="https://avatars.githubusercontent.com/u/79617196?v=4" alt="perfil">
             <p>Edwar Javier Patiño Núñez</p>
-            <p>Ingeniero electrónico con gusto por la programación oriendata al desarrollo de aplicaciones web y móviles.</p>
+            <p>Ingeniero electrónico con gusto por la programación, la automatización y el desarrollo de aplicaciones web y móviles.</p>
             <div class="C01">
                 <div class="C02">
-                    <span>🏚️</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="location" class="icon_01">
                     <span>Bogotá, CO</span>
                 </div>
                 <div class="C02">
-                    <span>✉️</span>
+                    <img src="https://cdn-icons-png.flaticon.com/512/80/80599.png" alt="email" class="icon_01">
                     <a href="mailto:lyriard@gmail.com">E-mail</a>
                 </div>
             </div>
             <footer class="footer">
-                <a href="https://twitter.com/edwar_vhd" style="text-decoration: none;">🐦</a>
-                <a href="https://www.instagram.com/edwar.vhd/" style="text-decoration: none;">📷</a>
-                <a href="https://www.linkedin.com/in/edwar-pati%C3%B1o/" style="text-decoration: none;">💼</a>
-                <a href="https://github.com/edwar-vhd" style="text-decoration: none;">⌨️</a>
+                <a href="https://www.linkedin.com/in/edwar-pati%C3%B1o/" style="text-decoration: none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3128/3128219.png" alt="linkedin" class="icon_02">
+                </a>
+
+                <a href="https://github.com/edwar-vhd" style="text-decoration: none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" alt="github" class="icon_02">
+                </a>
+
+                <a href="https://twitter.com/edwar_vhd" style="text-decoration: none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="twitter" class="icon_02">
+                </a>
+
+                <a href="https://www.instagram.com/edwar.vhd/" style="text-decoration: none;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="instagram" class="icon_02">
+                </a>
             </footer>
         </div>
     </section>
